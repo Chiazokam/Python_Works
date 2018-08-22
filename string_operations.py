@@ -77,25 +77,25 @@ def count_a(text):
             count += 1
     return(count)
 
-#print(count_a("banana"))
+print(count_a("banana"))
 
 #==============================================================================
 
-def substring_count(substring, string):
+#def substring_count(substring, string):
     
     
-    results = 0
+ #   results = 0
     
-    substring_len = len(substring)
+  #  substring_len = len(substring)
     
-    for i in range(len(string)):
+   # for i in range(len(string)):
         
-        if substring[i:i+substring_len] == substring:
+    #    if substring[i:i+substring_len] == substring:
             
-            string.remove(substring[i:i+substring_len])
+     #       string.remove(substring[i:i+substring_len])
             
-            results += 1
+      #      results += 1
             
-    return results
+   # return results
 
-print(substring_count("an", "banana"))
+#print(substring_count("an", "banana"))
