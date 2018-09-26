@@ -84,3 +84,24 @@ def time_converter(twelve_hour):
 #print(time_converter("12:05:45AM"))
 #=========================================
 def round_grade(grades):
+    rounded_grades = []
+    for grade in grades:
+        if grade < 38:
+            rounded_grades.append(grade)
+        else:
+            n = grade
+            while n % 5 != 0:
+                five_mult = n
+                n += 1
+            if n - grade < 3:
+                rounded_grades.append(n)
+            else:
+                rounded_grades.append(grade)
+    return rounded_grades
+#print(round_grade([73, 67, 38, 33]))
+#=========================================
+def gen_rand(n, nlist):
+    import random
+    rand_list = list(set([x for x in range(n)]) - set(nlist))
+    return (random.choice(rand_list))
+#print(gen_rand(100, [x for x in range(20, 95)]))
